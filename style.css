@@ -2,14 +2,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
+  background: #f9f9f9;
+  color: #333;
 }
 
 header {
-  background: #333;
+  background: linear-gradient(90deg, #3a3a3a, #222);
   color: white;
   padding: 1rem;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
 nav {
@@ -20,9 +26,12 @@ nav {
   background: #444;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.5rem;
   cursor: pointer;
   margin: 0 5px;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 .tablink:hover {
@@ -34,6 +43,53 @@ nav {
   padding: 2rem;
   background: white;
   margin: 1rem auto;
-  max-width: 800px;
-  border-radius: 6px;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.feedback-link {
+  display: inline-block;
+  background: #0078d4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.feedback-link:hover {
+  background: #005a9e;
+}
+
+@media (max-width: 600px) {
+  .tablink {
+    display: block;
+    margin: 5px auto;
+    width: 80%;
+  }
 }
