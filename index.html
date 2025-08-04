@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Info</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Product</h1>
+    <nav>
+      <button class="tablink" onclick="openTab(event, 'home')" id="defaultTab">Home</button>
+      <button class="tablink" onclick="openTab(event, 'features')">Features</button>
+      <button class="tablink" onclick="openTab(event, 'feedback')">Feedback</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Tab -->
+    <section id="home" class="tabcontent">
+      <h2>Welcome</h2>
+      <p>Quick intro to your product and what it solves.</p>
+    </section>
+
+    <!-- Features Tab -->
+    <section id="features" class="tabcontent">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Feature One</li>
+        <li>Feature Two</li>
+        <li>Feature Three</li>
+      </ul>
+    </section>
+
+    <!-- Feedback Tab -->
+    <section id="feedback" class="tabcontent">
+      <h2>Share Your Feedback</h2>
+      <p><a href="https://forms.office.com/r/YOUR_FORM_ID" target="_blank">Open Feedback Form</a></p>
+      <iframe src="https://forms.office.com/r/YOUR_FORM_ID"
+              width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">
+        Loading…
+      </iframe>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
