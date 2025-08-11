@@ -23,25 +23,31 @@ nav {
 }
 
 .tablink {
-  background: #0079C2; /* blue buttons */
-  color: #FFFFFF;
-  border: none;
+  background: #fff;
+  color: #0079C2;
+  border: 2px solid #0079C2;
   padding: 0.7rem 1.5rem;
   cursor: pointer;
   margin: 0 5px;
   font-size: 1rem;
-  border-radius: 4px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  border-radius: 6px 6px 0 0;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-shadow: none;
 }
 
 .tablink:hover {
-  background: #7DA544; /* green hover */
-  transform: scale(1.05);
+  background: #e3f0ff;
+  color: #0079C2;
+  box-shadow: 0 2px 8px rgba(0,121,194,0.08);
 }
 
 .tablink.active {
-  background: #FFC423; /* yellow active tab */
-  color: #000000;
+  background: #0079C2;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0,121,194,0.15);
+  border-bottom: 2px solid #fff;
 }
 
 .tabcontent {
